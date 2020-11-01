@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http:/www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Bestmix</title>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link media="all" rel="stylesheet"
+          href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<h2>Home Page</h2>
-<p>potencjalna  podstrona</p>
+<h1>Bestmix</h1>
+<div th:replace="parts/header :: header">The header</div>
+<div th:replace="parts/menu :: menu">The menu</div>
+<div th:replace="parts/content :: content">The Content</div>
+<div th:replace="parts/footer :: footer">The Footer</div>
 </body>
 </html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http:/www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Bestmix</title>-->
+<!--    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Home Page</h2>-->
+<!--<p>potencjalna  podstrona</p>-->
+<!--</body>-->
+<!--</html>-->
