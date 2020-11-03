@@ -41,7 +41,7 @@ public class OfferController {
     }
 
     private ProductDto getProduct(ProductDto product) {
-        return product.setDescription(product.getDescription()); //not sure if how it should work...
+        return product.setDescription(product.getDescription()); //not sure how it should work...
     }
 }
 
