@@ -11,3 +11,5 @@ public class OfferController {
         return "offer";
     }
 }
+
+//demeter BlogController
