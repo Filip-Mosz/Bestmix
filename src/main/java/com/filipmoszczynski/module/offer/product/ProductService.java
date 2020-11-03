@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ProductService {
@@ -24,5 +25,12 @@ public class ProductService {
             LOGGER.error("Error - No products found", e.getLocalizedMessage());
             return List.of();
         }
+    }
+
+    public Optional<ProductDto> getProduct(String id) {
+        return getProducts()
+                .stream()
+                .filter(product->product.getId().equalsIgnoreCase(id))
+                .findFirst();
     }
 }
