@@ -37,11 +37,7 @@ class ProductServiceTest {
     }
 
     ProductDto extract (Optional<ProductDto> optional) {
-        if (optional.isPresent())
-        {
-            return optional.get();
-        }
+        return optional.orElseGet(ProductDto::new);
 
-        return new ProductDto();
     }
 }

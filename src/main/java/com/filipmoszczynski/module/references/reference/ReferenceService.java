@@ -21,15 +21,9 @@ public class ReferenceService {
                     MAPPER.getTypeFactory().constructCollectionType(List.class, ReferenceDto.class)
             );
         } catch (IOException e) {
-            LOGGER.error("Error - No references found", e.getLocalizedMessage());
+            LOGGER.error("Error {}", e.getLocalizedMessage());
             return List.of();
         }
     }
 
-//    public Optional<ProductDto> getReference(String id) {
-//        return getProducts()
-//                .stream()
-//                .filter(product->product.getId().equalsIgnoreCase(id))
-//                .findFirst();
-//    }
 }
