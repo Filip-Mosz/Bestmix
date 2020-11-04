@@ -13,6 +13,7 @@ public class MenuService {
                 new MenuDto("O nas"),
                 new MenuDto("Aktualności"),
                 new MenuDto("Oferta"),
+                new MenuDto("Referencje"),
                 new MenuDto("Kontakt")
         );
     }
