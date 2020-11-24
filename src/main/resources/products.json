@@ -19,5 +19,11 @@
     "name": "Bestmix® ration",
     "header": "Układanie dawek pokarmowych",
     "description": "Efektywna hodowla bydła mlecznego i mięsnego wymaga od doradcy żywieniowego i hodowcy tworzenia pełnowartościowych dawek pokarmowych w bardzo krótkim czasie.\nKonsekwencją zmieniającej się warunków pogodowych i niestałej dostępności surowców paszowych oraz rosnących cen pasz jest zmniejszanie się zysku hodowcy. Z tego względu ograniczenie ceny paszy dzięki precyzji żywienia jest obecnie potrzebne bardziej niż kiedykolwiek.\n\nBestmix® Ration pozwala tworzyć perfekcyjnie zbilansowane dawki pokarmowe przy jednoczesnym najniższym ich koszcie dla każdego zwierzęcia na wszystkich etapach produkcji: produkcja mleka w konkretnym momencie laktacji, zasuszenie czy też dzienny przyrost masy ciała."
+  },
+  {
+    "id": "test",
+    "name": "test",
+    "header": "test formatowania tego szajsu",
+    "description": ["Lorem \t \u000A ipsum... trzeba będzie jeszcze raz przerobić opis na listę i poskładać w Javie#"," potencjalnie nowa linijka"]
   }
 ]

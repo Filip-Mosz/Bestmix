@@ -9,12 +9,12 @@ public class MenuService {
 
     public List<MenuDto> getMenu() {
         return List.of(
-                new MenuDto("Home Page"),
-                new MenuDto("O nas"),
-                new MenuDto("Aktualności"),
-                new MenuDto("Oferta"),
-                new MenuDto("Referencje"),
-                new MenuDto("Kontakt")
+                new MenuDto("Home Page","/"),
+                new MenuDto("O nas", "/about"),
+                new MenuDto("Aktualności", "/news"),
+                new MenuDto("Oferta", "/offer"),
+                new MenuDto("Referencje", "/references"),
+                new MenuDto("Kontakt", "/contact")
         );
     }
 

@@ -34,12 +34,15 @@ public class ProductDto {
         return this;
     }
 
+
+
     public String getDescription() {
         return description;
     }
 
     public ProductDto setDescription(String description) {
-        this.description = description;
+//        this.description = description;
+        this.description = ProductService.formatDescription(description);
         return this;
     }
 }

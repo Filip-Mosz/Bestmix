@@ -9,7 +9,7 @@
 <body>
 <h1>Bestmix</h1>
 <div th:replace="parts/header :: header">The header</div>
-<div th:replace="parts/menu :: menu">The menu</div>
+<div th:replace="parts/menu :: template (items=${menuItems})">menu</div>
 <div th:replace="parts/content :: content">The Content</div>
 <div th:replace="parts/footer :: footer">The Footer</div>
 </body>

@@ -7,11 +7,20 @@
 <body>
 <nav th:fragment="menu">
 
-    <p>Homepage</p>
-    <p>O nas</p>
-    <p>Aktualności</p>
-    <p>Oferta</p>
+<!--    <p>Homepage</p>-->
+<!--    <p>O nas</p>-->
+<!--    <p>Aktualności</p>-->
+<!--    <p>Oferta</p>-->
     <p>Kontakt</p>
+
+    <div class="nav-scroller py-1 mb-2" th:fragment="template(items)">
+        <nav class="nav d-flex justify-content-between">
+            <a th:each="item : ${items}"
+               class="p-2 text-muted"
+               href="${item.link}" th:text="${item.name}"></a>
+        </nav>
+    </div>
+
 
 </nav>
 </body>
