@@ -5,6 +5,10 @@ public class MenuDto {
     private String name;
     private String link;
 
+    public String getLink() {
+        return link;
+    }
+
     public MenuDto(String name){
         this.name = name;
     }

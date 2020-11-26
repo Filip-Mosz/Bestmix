@@ -2,12 +2,12 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Header</title>
+    <title>international</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $("#locales").change(function () {
-                const selectedOption = $('#locales').val();
+                var selectedOption = $('#locales').val();
                 if (selectedOption !== ''){
                     window.location.replace('international?lang=' + selectedOption);
                 }
@@ -16,15 +16,14 @@
     </script>
 </head>
 <body>
-<header th:fragment="header" th:text="#{greeting}"> ... header 2 ...
-    <span th:text="#{lang.change}">change language</span>
-    <select id="locales">
-        <option value=""></option>
-        <option value="en" th:text="#{lang.eng}"></option>
-        <option value="pl" th:text="#{lang.pl}"></option>
-    </select>
-</header>
+<h2 th:text="#{greeting}">international controller works</h2>
 
+<span th:text="#{lang.change}">change language</span>
+<select id="locales">
+    <option value=""></option>
+    <option value="en" th:text="#{lang.eng}"></option>
+    <option value="fr" th:text="#{lang.pl}"></option>
+</select>
 
 </body>
 </html>

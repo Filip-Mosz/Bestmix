@@ -22,7 +22,7 @@ public class ProductService {
                     MAPPER.getTypeFactory().constructCollectionType(List.class, ProductDto.class)
             );
         } catch (IOException e) {
-            LOGGER.error("Error - No products found", e.getLocalizedMessage());
+            LOGGER.error("Error {}", e.getLocalizedMessage());
             return List.of();
         }
     }
@@ -32,5 +32,10 @@ public class ProductService {
                 .stream()
                 .filter(product->product.getId().equalsIgnoreCase(id))
                 .findFirst();
+    }
+
+    public static String formatDescription(String description) {
+        System.lineSeparator();
+        return description.replaceAll("#", "\n"); // \\ wywala błąd, ' jest wypisywany, System.lineSeparator() nie działa
     }
 }

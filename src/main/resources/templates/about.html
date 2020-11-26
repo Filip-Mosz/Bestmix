@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Bestmix® About</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#locales").change(function () {
+                var selectedOption = $('#locales').val();
+                if (selectedOption !== ''){
+                    window.location.replace('about?lang=' + selectedOption);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <h3><b><i>About</i></b></h3>
+
+<span th:text="#{lang.change}">change language</span>
+<select id="locales">
+    <option value=""></option>
+    <option value="en" th:text="#{lang.eng}"></option>
+    <option value="fr" th:text="#{lang.fr}"></option>
+    <option value="pl" th:text="#{lang.pl}"></option>
+</select>
+
+<p th:text="#{content.about}"></p>
+<p th:text="#{content.about2}"></p>
 </body>
 </html>
