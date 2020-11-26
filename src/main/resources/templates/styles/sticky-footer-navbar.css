@@ -1,0 +1,21 @@
+/*Sticky footer styles---------------*/
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    /*margin bottom for footer height*/
+    margin-bottom: 60px;
+}
+.footer-sticky{
+    overflow: visible;
+    position: absolute; !important;
+    bottom: 0;
+    width: 80%; !important;
+    /*set the fixed height of the footer here*/
+    height: 60px;
+    line-height: 60px;
+    /*vertically center the text here*/
+    background-color: #8b1b1b; !important;
+
+}

@@ -5,6 +5,37 @@
     <title>Footer</title>
 </head>
 <body>
-<footer th:fragment="footer"> ... footer 2 ... </footer>
+<!--    due to conflicts with other styles, style for footer land here :|    -->
+<footer th:fragment="footer" class="footer-sticky mt-auto py-3"
+        style="
+            background-color: #8b1b1b;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            justify-content: space-evenly;
+        "
+>
+    <div align="center" class="container">
+        <p>&#127968; ul. Świętojańska 75/5 81-389 Gdynia</p>
+    </div>
+    <div align="center" class="container">
+
+        <p>&#128222; +48 58 620 90 09</p>
+    </div>
+    <div align="center" class="container">
+
+        <p>&#128233; anet@anet.com.pl</p><!--mechanizm mailto:  https://www.rapidtables.com/web/html/mailto.html -->
+    </div>
+    <div align="center" class="container">
+
+        <p>&#127757;<a href="http://www.anet.com.pl" target="_blank">www.anet.com.pl</a></p><!--Jako link!!!-->
+    </div>
+
+
+
+</footer>
 </body>
 </html>

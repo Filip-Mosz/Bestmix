@@ -5,12 +5,17 @@
     <title>DEV Bestmix® - Strategiczne narzedzia informatyczne dla przemysłu spożywczego i paszowego</title>
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="styles/sticky-footer-navbar.css" media="all"
+          rel="stylesheet">
 </head>
 <body>
-<h1>Bestmix</h1>
-<div th:replace="parts/header :: header">The header</div>
-<div th:replace="parts/menu :: menu">The menu</div>
-<div th:replace="parts/content :: content">The Content</div>
-<div th:replace="parts/footer :: footer">The Footer</div>
+<div class="container">
+    <div th:replace="parts/header :: header">The header</div>
+<!--/*@thymesVar id="menuItems" type="List<com.filipmoszczynski.module.menu.MenuDto>"*/-->
+<!--    <div            th:replace="parts/menu.html :: template                (items=${menuItems})">menu</div>-->
+<div th:replace="parts/menu :: menu">...menu...</div>
+    <div th:replace="parts/content :: content">The Content</div>
+</div>
+    <div th:replace="parts/footer :: footer" class="footer-sticky">The Footer</div>
 </body>
 </html>
