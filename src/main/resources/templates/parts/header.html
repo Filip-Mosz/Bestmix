@@ -17,14 +17,17 @@
 </head>
 <body>
 <header th:fragment="header" th:text="#{greeting}"> ... header 2 ...
+    <div>
+        <img src="../img/banner.png" alt="here should be banner" width="75%" >
+    </div>
     <span th:text="#{lang.change}">change language</span>
     <select id="locales">
         <option value=""></option>
         <option value="en" th:text="#{lang.eng}"></option>
         <option value="pl" th:text="#{lang.pl}"></option>
     </select>
-</header>
 
+</header>
 
 </body>
 </html>

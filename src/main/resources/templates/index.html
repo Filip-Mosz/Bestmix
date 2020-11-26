@@ -9,11 +9,15 @@
 <body>
 <div class="container">
     <div th:replace="parts/header :: header">The header</div>
-<!--/*@thymesVar id="menuItems" type="List<com.filipmoszczynski.module.menu.MenuDto>"*/-->
-<!--    <div            th:replace="parts/menu.html :: template                (items=${menuItems})">menu</div>-->
-<div th:replace="parts/menu :: menu">...menu...</div>
+    <!--/*@thymesVar id="menuItems" type="List<com.filipmoszczynski.module.menu.MenuDto>"*/-->
+    <div
+            th:replace="parts/menu.html :: template
+                    (items=${menuItems})">menu
+    </div>
+
+    <div th:replace="parts/menu :: menu">...menu...</div>
     <div th:replace="parts/content :: content">The Content</div>
 </div>
-    <div th:replace="parts/footer :: footer" class="footer-sticky">The Footer</div>
+<div th:replace="parts/footer :: footer" class="footer-sticky">The Footer</div>
 </body>
 </html>
