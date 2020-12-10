@@ -2,48 +2,48 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/myStyles.css">
     <title>Content</title>
+    <style>
+        .kafel {
+            color: darkgray;
+            box-shadow: 10px 10px 15px gray;
+            padding: 30px;
+            margin-left: 20%;
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
 <body>
-<section class="col-md-12" th:fragment="content"> CONTENT
+<section class="col-md-12" th:fragment="content">
 <!--  musi posiadać styl "wydłużający stronę o wysokość footera; chyba jednak nie musi..."  -->
 <!--  kafelka całkiem spoko  -->
 
-<div style="color: darkgray;
-    box-shadow: 10px 10px 15px gray;
-    padding: 30px;
-    margin-left: 20%;
-">
-
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id metus ligula. Curabitur lobortis, orci nec convallis porta, ipsum velit placerat purus, at varius ante neque a purus. Maecenas finibus nisi nisi, in dignissim nisi varius eu. Vivamus tempor augue massa, non imperdiet nunc egestas sit amet. Ut tempus aliquet elit ut cursus. Etiam sit amet eleifend risus. Etiam posuere, sem eu facilisis pulvinar, magna sapien placerat ipsum, et euismod ex felis vitae arcu. Aliquam erat volutpat. Duis vestibulum augue eget euismod suscipit. Aenean eu tortor sit amet nulla blandit posuere. Vestibulum pretium sem in venenatis facilisis. Morbi sed feugiat leo. Pellentesque non posuere nisi, a accumsan ex. Praesent semper tempor tincidunt. Praesent sed ex ante. Donec sollicitudin, nisi nec dapibus ultricies, nunc libero auctor libero, non mattis dolor ante quis nibh.
-
-    Fusce vitae tempor leo, finibus euismod nibh. Fusce vel diam consequat, sollicitudin dolor ac, facilisis est. Proin sem ligula, blandit nec ultrices in, ornare ut orci. Suspendisse venenatis leo ac neque tempus pharetra. Nam libero urna, scelerisque eget semper et, dignissim ut mi. Proin rutrum congue iaculis. Suspendisse vel ex rhoncus, finibus magna eget, accumsan sem. Mauris ut tristique arcu. Fusce nulla felis, efficitur non odio sit amet, aliquet pretium neque. Duis eu sodales turpis, sed pulvinar sapien. Praesent mollis laoreet tempus. Phasellus porta venenatis felis dictum varius. Morbi viverra eget mi quis accumsan.
-
-    Aliquam ac dolor ac dolor mollis efficitur. Mauris iaculis enim eros, sit amet commodo enim vulputate et. Mauris volutpat aliquet elit. Fusce vitae convallis erat. Mauris sed viverra eros. Cras et magna vitae eros dignissim maximus. Morbi vestibulum, augue non dictum tincidunt, libero sapien luctus ipsum, eu semper risus felis sit amet nunc. Ut molestie augue vitae tellus fermentum, nec ullamcorper quam porttitor. Nulla facilisi. Vestibulum ac blandit dui.
-
-    Nulla eu faucibus urna. Etiam facilisis mattis magna eu blandit. Maecenas rhoncus fermentum convallis. Proin tempor eget lacus at consequat. Phasellus tempor ex vel neque aliquam, in porta nibh maximus. Suspendisse accumsan tellus in sagittis sodales. In ac nisl consequat, semper est ac, volutpat justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed maximus eu sem a iaculis. Nullam a mi hendrerit, dignissim quam in, congue nunc. Curabitur euismod diam in neque scelerisque egestas. Donec tortor mauris, tincidunt non tortor sit amet, feugiat euismod massa. Quisque quis iaculis neque. In sodales arcu vel sollicitudin vulputate.
-
-    Donec rutrum faucibus mauris ut eleifend. Proin non mollis nunc, ac mollis dolor. Ut in libero ut risus imperdiet viverra malesuada vitae sapien. Cras mattis lectus non tincidunt tincidunt. In hac habitasse platea dictumst. Praesent convallis malesuada risus ac porttitor. Nullam venenatis sem sed erat mattis viverra. Mauris suscipit turpis a sem mollis ornare. Quisque tortor massa, pharetra non lectus at, mollis consequat felis. Fusce ac justo in ante pellentesque efficitur. Vestibulum vulputate turpis in est efficitur feugiat. Ut varius mauris augue, in cursus mi fringilla non. Sed sem diam, ultricies vitae pharetra consectetur, feugiat scelerisque neque. Phasellus lacinia, enim quis faucibus sagittis, lorem mi iaculis leo, nec consequat massa neque quis velit.
-</div>
-    <div
-            style="color: darkgray;
-    box-shadow: 10px 10px 15px gray;
-    padding: 30px;
-    margin-left: 20%;
-    margin-bottom: 25px;
-    ">
-
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id metus ligula. Curabitur lobortis, orci nec convallis porta, ipsum velit placerat purus, at varius ante neque a purus. Maecenas finibus nisi nisi, in dignissim nisi varius eu. Vivamus tempor augue massa, non imperdiet nunc egestas sit amet. Ut tempus aliquet elit ut cursus. Etiam sit amet eleifend risus. Etiam posuere, sem eu facilisis pulvinar, magna sapien placerat ipsum, et euismod ex felis vitae arcu. Aliquam erat volutpat. Duis vestibulum augue eget euismod suscipit. Aenean eu tortor sit amet nulla blandit posuere. Vestibulum pretium sem in venenatis facilisis. Morbi sed feugiat leo. Pellentesque non posuere nisi, a accumsan ex. Praesent semper tempor tincidunt. Praesent sed ex ante. Donec sollicitudin, nisi nec dapibus ultricies, nunc libero auctor libero, non mattis dolor ante quis nibh.
-
-    Fusce vitae tempor leo, finibus euismod nibh. Fusce vel diam consequat, sollicitudin dolor ac, facilisis est. Proin sem ligula, blandit nec ultrices in, ornare ut orci. Suspendisse venenatis leo ac neque tempus pharetra. Nam libero urna, scelerisque eget semper et, dignissim ut mi. Proin rutrum congue iaculis. Suspendisse vel ex rhoncus, finibus magna eget, accumsan sem. Mauris ut tristique arcu. Fusce nulla felis, efficitur non odio sit amet, aliquet pretium neque. Duis eu sodales turpis, sed pulvinar sapien. Praesent mollis laoreet tempus. Phasellus porta venenatis felis dictum varius. Morbi viverra eget mi quis accumsan.
-
-    Aliquam ac dolor ac dolor mollis efficitur. Mauris iaculis enim eros, sit amet commodo enim vulputate et. Mauris volutpat aliquet elit. Fusce vitae convallis erat. Mauris sed viverra eros. Cras et magna vitae eros dignissim maximus. Morbi vestibulum, augue non dictum tincidunt, libero sapien luctus ipsum, eu semper risus felis sit amet nunc. Ut molestie augue vitae tellus fermentum, nec ullamcorper quam porttitor. Nulla facilisi. Vestibulum ac blandit dui.
-
-    Nulla eu faucibus urna. Etiam facilisis mattis magna eu blandit. Maecenas rhoncus fermentum convallis. Proin tempor eget lacus at consequat. Phasellus tempor ex vel neque aliquam, in porta nibh maximus. Suspendisse accumsan tellus in sagittis sodales. In ac nisl consequat, semper est ac, volutpat justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed maximus eu sem a iaculis. Nullam a mi hendrerit, dignissim quam in, congue nunc. Curabitur euismod diam in neque scelerisque egestas. Donec tortor mauris, tincidunt non tortor sit amet, feugiat euismod massa. Quisque quis iaculis neque. In sodales arcu vel sollicitudin vulputate.
-
-    Donec rutrum faucibus mauris ut eleifend. Proin non mollis nunc, ac mollis dolor. Ut in libero ut risus imperdiet viverra malesuada vitae sapien. Cras mattis lectus non tincidunt tincidunt. In hac habitasse platea dictumst. Praesent convallis malesuada risus ac porttitor. Nullam venenatis sem sed erat mattis viverra. Mauris suscipit turpis a sem mollis ornare. Quisque tortor massa, pharetra non lectus at, mollis consequat felis. Fusce ac justo in ante pellentesque efficitur. Vestibulum vulputate turpis in est efficitur feugiat. Ut varius mauris augue, in cursus mi fringilla non. Sed sem diam, ultricies vitae pharetra consectetur, feugiat scelerisque neque. Phasellus lacinia, enim quis faucibus sagittis, lorem mi iaculis leo, nec consequat massa neque quis velit.
+<div>
+     <div class="kafel" th:text="#{content.main1}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 30px;
+        margin-left: 20%;
+        margin-bottom: 25px;
+        ">Dostarczamy specjalistyczne rozwiązania informatyczne ...</div>
+    <div th:text="#{content.main2}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 30px;
+        margin-left: 20%;
+        margin-bottom: 25px;
+        ">W zależności od potrzeb ...</div>
+    <div th:text="#{content.main3}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 30px;
+        margin-left: 20%;
+        margin-bottom: 25px;
+        ">Po udanej serii wdrożeń ...</div>
+    <div th:text="#{content.main4}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 30px;
+        margin-left: 20%;
+        margin-bottom: 25px;
+        ">Oprogramowanie dostarczane ...</div>
 </div>
 
 </section>
