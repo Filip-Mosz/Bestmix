@@ -7,7 +7,7 @@
 <body>
 <nav th:fragment="menu" class="mt-auto py-3"
     style="
-        background-color: #8b1b1b;
+        background-color: #004556;
             display: flex;
             align-items: center;
             position: sticky;
@@ -15,6 +15,7 @@
             z-index: 1;
             width: 100%;
             justify-content: space-evenly;
+            box-shadow: #004556 0px 10px 20px;
     "
 >
 
@@ -22,7 +23,7 @@
     <p><a href="/about" th:text="#{menu.about}">About us</a></p>
     <p><a href="/news" th:text="#{menu.news}">News</a></p>
     <p><a href="/offer" th:text="#{menu.offer}">Offer</a></p>
-    <p><a href="/contact" th:text="#{menu.contact}">Contact</a></p>
+    <p><a th:href="@{/contact}" th:text="#{menu.contact}">Contact</a></p>
 
     <div class="nav-scroller py-1 mb-2" th:fragment="template(items)">
         <nav class="nav d-flex justify-content-between">

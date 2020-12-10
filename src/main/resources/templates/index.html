@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <title>DEV Bestmix® - Strategiczne narzedzia informatyczne dla przemysłu spożywczego i paszowego</title>
@@ -7,7 +8,8 @@
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container">
+    <div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
+<div class="container ">
     <div th:replace="parts/header :: header">The header</div>
     <!--/*@thymesVar id="menuItems" type="List<com.filipmoszczynski.module.menu.MenuDto>"*/-->
     <div
@@ -15,9 +17,15 @@
                     (items=${menuItems})">menu
     </div>
 
-    <div th:replace="parts/menu :: menu">...menu...</div>
+<!--    <main role="main" class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="blog-main" style="width: 75%; border-color: chartreuse">-->
+<!--                <section layout:fragment="content"></section>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </main>-->
     <div th:replace="parts/content :: content">The Content</div>
 </div>
-<div th:replace="parts/footer :: footer" class="footer-sticky">The Footer</div>
+<footer th:replace="parts/footer :: footer" class="fixed-bottom">The Footer</footer>
 </body>
 </html>
