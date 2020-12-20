@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
 <head>
     <meta charset="UTF-8">
     <title>DEV Bestmix® - Strategiczne narzedzia informatyczne dla przemysłu spożywczego i paszowego</title>
+    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
@@ -25,6 +27,12 @@
 <!--        </div>-->
 <!--    </main>-->
     <div th:replace="parts/content :: content">The Content</div>
+    <img src="../templates/img/banner.png" alt="here should be banner">
+    <p style="color: darkgray;
+    font-size: 0.5rem";
+    align="center">Developed by Filip M. -
+        <a href="https://www.github.com/Filip-Mosz" style="color: darkgray" target="_blank">
+            www.github.com/Filip-Mosz</a></p>
 </div>
 <footer th:replace="parts/footer :: footer" class="fixed-bottom">The Footer</footer>
 </body>
