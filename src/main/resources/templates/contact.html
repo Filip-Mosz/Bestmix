@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Bestmix® Contact</title>
+    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+    <link media="all" rel="stylesheet"
+          href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<b>Contact</b>
 
-<div align="center">
-    <p>ul. Świętojańska 75/5 81-389 Gdynia</p>
+<div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
 
-    <p>tel.   +48 58 620 90 09</p>
+<div class="container">
+    <b>Contact</b>
 
-    <p>email:   anet@anet.com.pl</p><!--mechanizm mailto:  https://www.rapidtables.com/web/html/mailto.html -->
+    <div align="center"
+         style=" box-shadow: 10px 10px 15px gray;
+                padding: 30px;
+                margin-left: 20%;
+                margin-bottom: 25px;">
+        <p>ul. Świętojańska 75/5 81-389 Gdynia</p>
 
-    <p><a href="http://www.anet.com.pl" target="_blank">www.anet.com.pl</a></p><!--Jako link!!!-->
+        <p>tel. +48 58 620 90 09</p>
+
+        <p>email: anet@anet.com.pl</p><!--mechanizm mailto:  https://www.rapidtables.com/web/html/mailto.html -->
+
+        <p><a href="http://www.anet.com.pl" target="_blank">www.anet.com.pl</a></p><!--Jako link!!!-->
+    </div>
 </div>
 </body>
 </html>
