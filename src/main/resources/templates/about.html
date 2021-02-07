@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Bestmix® About</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#locales").change(function () {
-                var selectedOption = $('#locales').val();
-                if (selectedOption !== ''){
-                    window.location.replace('about?lang=' + selectedOption);
-                }
-            });
-        });
-    </script>
+    <script th:replace="parts/langScript"></script>
+    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+    <link media="all" rel="stylesheet"
+          href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
+<div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
 <h3><b><i>About</i></b></h3>
 
-<span th:text="#{lang.change}">change language</span>
-<select id="locales">
-    <option value=""></option>
-    <option value="en" th:text="#{lang.eng}"></option>
-    <option value="fr" th:text="#{lang.fr}"></option>
-    <option value="pl" th:text="#{lang.pl}"></option>
-</select>
 
-<p th:text="#{content.about}"></p>
-<p th:text="#{content.about2}"></p>
+
+<!--<p th:text="#{content.about}"></p>-->
+<!--<p th:text="#{content.about2}"></p>-->
+
+<div class="container">
+    <section class="col-md-12">
+        <!--  kafelka całkiem spoko  -->
+
+        <div style=" box-shadow: 10px 10px 15px gray;
+                padding: 30px;
+                margin-left: 20%;
+                margin-bottom: 25px;">
+            <div class="kafel" th:text="#{content.about}" style="color: darkgray;
+          box-shadow: 10px 10px 15px gray;
+          padding: 30px;
+          margin-bottom: 25px;
+        ">Dostarczamy specjalistyczne rozwiązania informatyczne ...</div>
+            <div th:text="#{content.about2}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 20px;
+        margin-bottom: 25px;
+        ">W zależności od potrzeb ...</div>
+        </div>
+
+    </section>
+</div>
+
+<p style="color: darkgray;
+    font-size: 0.5rem";
+   align="center">Developed by Filip M. -
+    <a href="https://www.github.com/Filip-Mosz" style="color: darkgray" target="_blank">
+        www.github.com/Filip-Mosz</a></p>
+</div>
+<footer th:replace="parts/footer :: footer" class="fixed-bottom">The Footer</footer>
 </body>
 </html>
