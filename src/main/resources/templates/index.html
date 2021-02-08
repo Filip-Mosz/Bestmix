@@ -1,20 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-
->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <script th:replace="parts/langScript"></script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-<!--<script type="text/javascript">-->
-<!--    $(document).ready(function() {-->
-<!--        $("#locales").change(function () {-->
-<!--            var selectedOption = $('#locales').val();-->
-<!--            if (selectedOption !== ''){-->
-<!--                window.location.replace('home?lang=' + selectedOption);-->
-<!--            }-->
-<!--        });-->
-<!--    });-->
-<!--</script>-->
 <head>
     <meta charset="UTF-8">
     <title>DEV Bestmix® - Strategiczne narzedzia informatyczne dla przemysłu spożywczego i paszowego</title>
@@ -25,21 +11,8 @@
 <body>
     <div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
 <div class="container ">
-<!--    <div th:replace="parts/header :: header">The header</div>-->
-<!--    &lt;!&ndash;/*@thymesVar id="menuItems" type="List<com.filipmoszczynski.module.menu.MenuDto>"*/&ndash;&gt;-->
-<!--    <div-->
-<!--            th:replace="parts/menu.html :: template-->
-<!--                    (items=${menuItems})">menu-->
-<!--    </div>-->
-
-<!--    <main role="main" class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="blog-main" style="width: 75%; border-color: chartreuse">-->
-<!--                <section layout:fragment="content"></section>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </main>-->
     <div th:replace="parts/content :: content">The Content</div>
+
     <img src="../templates/img/banner.png" alt="here should be banner">
     <p style="color: darkgray;
     font-size: 0.5rem";
