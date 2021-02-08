@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<script th:replace="parts/langScript"></script>
 <head>
     <meta charset="UTF-8">
     <title>Bestmix® Contact</title>
+    <script th:replace="parts/langScript"></script>
     <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -20,9 +20,9 @@
                 padding: 30px;
                 margin-left: 20%;
                 margin-bottom: 25px;">
-        <p>ul. Świętojańska 75/5 81-389 Gdynia</p>
+        <p th:text="#{contact.address}">ul. Świętojańska 75/5 81-389 Gdynia</p>
 
-        <p>tel. +48 58 620 90 09</p>
+        <p th:text="#{contact.phone} + '. +48 58 620 90 09'">tel. +48 58 620 90 09</p>
 
         <p>email: anet@anet.com.pl</p><!--mechanizm mailto:  https://www.rapidtables.com/web/html/mailto.html -->
 
