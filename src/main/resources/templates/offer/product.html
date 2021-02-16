@@ -13,11 +13,28 @@
 <div class="container ">
     <b><i>Product!</i></b>
     <p>text</p>
-    <!--/*@thymesVar id="model" type=""*/-->
-    <p th:text="${product.header}">nagłówek produktu</p>
-<!--    <p th:text="${product.description}">opis produktu</p>-->
-    <p th:text="#{offer.food1}">id produktu</p>
-    <p th:text="#{offer.food2}">id produktu</p>
+    <section class="col-md-12">
+        <!--  kafelka całkiem spoko  -->
+
+        <div style=" box-shadow: 10px 10px 15px gray;
+                padding: 30px;
+                margin-left: 20%;
+                margin-bottom: 25px;">
+            <div class="kafel" th:text="${product.header}" style="color: darkgray;
+          box-shadow: 10px 10px 15px gray;
+          padding: 30px;
+          margin-bottom: 25px;
+        ">nagłówek produktu
+            </div>
+            <div th:text="${product.description}" style="color: darkgray;
+        box-shadow: 10px 10px 15px gray;
+        padding: 20px;
+        margin-bottom: 25px;
+        ">opis produktu
+            </div>
+        </div>
+
+    </section>
 
     <img src="../templates/img/banner.png" alt="here should be banner">
     <p style="color: darkgray;
