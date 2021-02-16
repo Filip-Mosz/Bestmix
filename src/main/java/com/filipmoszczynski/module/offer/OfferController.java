@@ -44,7 +44,7 @@ public class OfferController {
     public String getProductEng(@PathVariable("id") String id, @PathVariable("lang") String lang, Model model) {
         Optional<ProductDto> product = productService.getProduct(id,lang);
         List<MenuDto> menuItems = menuService.getMenu();
-        model.addAttribute("product", getProduct(product.get()));
+        model.addAttribute("product", getProduct(product.get())); //there's a error here (no value present) -> [capturing css link as variable "lang"]
         model.addAttribute("menuItems", menuItems);
 
         return "offer/product.html";
