@@ -33,7 +33,16 @@ public class OfferController {
 
     @RequestMapping("/offer/{id}")
     public String getProduct(@PathVariable("id") String id, Model model) {
-        Optional<ProductDto> product = productService.getProduct(id);
+        Optional<ProductDto> product = productService.getProduct(id,null);
+        List<MenuDto> menuItems = menuService.getMenu();
+        model.addAttribute("product", getProduct(product.get()));
+        model.addAttribute("menuItems", menuItems);
+
+        return "offer/product.html";
+    }
+    @RequestMapping("/offer/{id}/{lang}")
+    public String getProductEng(@PathVariable("id") String id, @PathVariable("lang") String lang, Model model) {
+        Optional<ProductDto> product = productService.getProduct(id,lang);
         List<MenuDto> menuItems = menuService.getMenu();
         model.addAttribute("product", getProduct(product.get()));
         model.addAttribute("menuItems", menuItems);

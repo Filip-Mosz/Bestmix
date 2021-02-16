@@ -6,7 +6,6 @@ public class ProductDto {
     private String name;
     private String header;
     private String description;
-    public String description_en;
 
     public String getId() {
         return id;

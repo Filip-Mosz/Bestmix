@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="${product.name}">Title</title>
-    <script th:replace="parts/langScript"></script>
     <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
-<div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
+<nav class="mt-auto py-3"
+     style="
+        background-color: #004556;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            justify-content: space-evenly;
+            scroll-behavior: auto;
+            box-shadow: #004556 0px 0px 0 2rem;
+    "
+>
+
+    <p><a href="/" th:text="#{menu.homepage}">Homepage</a></p>
+    <p><a href="/about" th:text="#{menu.about}">About us</a></p>
+    <p><a href="/news" th:text="#{menu.news}">News</a></p>
+    <p><a href="/offer" th:text="#{menu.offer}">Offer</a></p>
+    <p><a th:href="@{/contact}" th:text="#{menu.contact}">Contact</a></p>
+</nav>
 <div class="container ">
     <b><i>Product!</i></b>
     <p>text</p>

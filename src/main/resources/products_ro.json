@@ -1,0 +1,29 @@
+[
+  {
+    "id": "food",
+    "name": "Bestmix® Food",
+    "header": "Zarządzanie recepturami",
+    "description": "---ROMANIAN---Proces opracowywania nowych produktów i zarządzania recepturami w przemyśle spożywczym zmienił się drastycznie w ostatnich latach. Dzisiejsze rynki żywności są niecierpliwe na nowe produkty i ulepszone przepisy. Dział badawczo-rozwojowy, jednostka ds. Kontroli jakości i zarządzanie receptami produktów są pod ciągłą presją dostarczania nowych produktów spełniających surowe wymagania i oczekiwania cenowe na rynku. Oznacza to ciągłe znajdowanie sposobów na skrócenie cyklu wprowadzania produktów na rynek, wybór opłacalnych składników i utrzymanie wysoce niezawodnej reputacji. Niestety, proste dodatki do twojego systemu ERP nie zapewniają niezbędnej elastyczności i mocy, aby to zrobić. Zaktualizowane ręcznie arkusze kalkulacyjne lub małe aplikacje rozpowszechniane w Twojej firmie nie zapewniają pełnej kontroli nad danymi lub procesem tworzenia nowych produktów.\n\nTworzenie innowacyjnych i konkurencyjnych produktów pozostaje jednym z głównych wyzwań każdej firmy spożywczej. Bestmix Food – nasze rozwiązanie do zarządzania recepturami, wspiera firmy na każdym etapie procesu rozwoju i umożliwia użytkownikom zarządzanie składnikami, przepisami i specyfikacjami produktów przy użyciu bezpiecznych i elastycznych metod."
+  },{
+    "id": "lims",
+    "name": "Bestmix® Quality Control",
+    "header": "Zarządzanie jakościa",
+    "description": "---ROMANIAN---Zarządzanie jakością ma kluczowe znaczenie dla produkcji bezpiecznej, zbilansowanej i zdrowej żywności, karm dla zwierząt domowych i pasz. Ponieważ ilość przetwarzanych danych rośnie każdego roku, zarządzanie jakością surowców stało się strategicznym atutem.\n\nIstnieje wiele firm produkujących pasze i żywność, które w sposób ciągły stara się uzyskiwać dane o wysokiej jakości i dobrze je wykorzystać.\n\nProces zbierania, integrowania i używania danych jakościowych może być czasochłonny i podatny na błędy. Nawet firmy polegające na module zarządzania jakością swojego systemu ERP są często rozczarowane. Standardowe rozwiązania ERP nie są dostatecznie dostosowane, aby sprostać specyficznym potrzebom przemysłu spożywczego i paszowego i nie nadążają za szybko zmieniającymi się wymaganiami rozwijającej się firmy.\n\nRozumiemy specyficzne potrzeby przemysłu spożywczego i paszowego, jeśli chodzi o zarządzanie jakością. Dlatego opracowaliśmy BESTMIX LIMS, specjalistyczne oprogramowanie dla firm z branży spożywczej i paszowej, wspierające naszych klientów jeszcze lepiej w osiąganiu ich celów jakościowych.\n\nDowiedz się wszystkiego o naszych produktach do zarządzania jakością, które pomogą Twojej firmie  przekształcić dane dotyczące jakości w prawdziwą wartość."
+  },{
+    "id": "feed",
+    "name": "Bestmix® Feed",
+    "header": "Optymalizacja receptur paszowych",
+    "description": "---ROMANIAN---Wyprzedzanie konkurencji wymaga mądrego przygotowywania pasz. Jak stworzyć receptury o najlepszej jakości przy najniższych kosztach, a do tego\nw każdych warunkach rynkowych? BESTMIX daje najbardziej optymalną odpowiedź. To przyjazne dla użytkownika oprogramowanie ułatwia zarządzanie dokładnymi wartościami odżywczymi surowców i pasz, parametrami produkcyjnymi i etykietami/atestami receptur. Może natychmiast dostosować się do niestabilnych kosztów surowców,\nzapasówi kontraktów zakupowych. Rezultatem są doskonałe receptury,\nktóre można przełożyć bezpośrednio na praktyczne produkty i automatycznie zsynchronizować z etykietowaniem i danymi bezpieczeństwa.\nZoptymalizuj swój skład pasz.\n\nOpracowane i utrzymywane przez naszych konsultantów produkty BESTMIX zapewniają doradcom żywieniowym idealne narzędzie do zwiększania wydajności i minimalizowania kosztów. Słuchając naszych klientów i nadążając za zmianami w branży w zakresie oczekiwań i przepisów, dostarczamy najnowocześniejsze rozwiązanie do tworzenia receptur paszowych. Dzięki naszym staraniom, aby oprogramowanie było aktualne, nasi klienci są pewni, że spełniają najwyższe standardy w zakresie tworzenia pasz, zarządzania zasobami i wymogów prawnych. Oznacza to, że mają więcej czasu na skupienie się na swojej podstawowej działalności i mają pewność, że ich receptura spełni wszystkie wymogi.\n\nPotrzebujesz najtańszej receptury paszy, bez względu na to, jak trudne są ograniczenia żywieniowe? Zdecyduj się na BESTMIX. Najmądrzejszy sposób na większą konkurencyjność i niższe koszty.\n\n        Optymalna receptura paszy\n        Optymalizacja kosztów\n        Zarządzanie specyfikacjami produktu\n        Zarządzanie etykietami\n        Narzędzie do opracowywania produktu\n        Zrównoważone obliczenia racji\n"
+  },{
+    "id": "ration",
+    "name": "Bestmix® Ration",
+    "header": "Układanie dawek pokarmowych",
+    "description": "---ROMANIAN---Efektywna hodowla bydła mlecznego i mięsnego wymaga od doradcy żywieniowego i hodowcy tworzenia pełnowartościowych dawek pokarmowych w bardzo krótkim czasie.\nKonsekwencją zmieniającej się warunków pogodowych i niestałej dostępności surowców paszowych oraz rosnących cen pasz jest zmniejszanie się zysku hodowcy. Z tego względu ograniczenie ceny paszy dzięki precyzji żywienia jest obecnie potrzebne bardziej niż kiedykolwiek.\n\nBestmix® Ration pozwala tworzyć perfekcyjnie zbilansowane dawki pokarmowe przy jednoczesnym najniższym ich koszcie dla każdego zwierzęcia na wszystkich etapach produkcji: produkcja mleka w konkretnym momencie laktacji, zasuszenie czy też dzienny przyrost masy ciała."
+  },
+  {
+    "id": "test",
+    "name": "test",
+    "header": "test formatowania tego szajsu",
+    "description": "Lorem \t \u000A ipsum... trzeba będzie jeszcze raz przerobić opis na listę i poskładać w Javie#"
+  }
+]

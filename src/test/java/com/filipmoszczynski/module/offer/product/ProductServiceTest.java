@@ -23,14 +23,14 @@ class ProductServiceTest {
     @Test
     void getProducts() {
 
-        assertEquals(testService.getProducts().size(), 4);
+        assertEquals(testService.getProducts(null).size(), 4);
 
     }
 
     @Test
     void getProduct() {
 
-        ProductDto currentValue = extract(testService.getProduct("food"));
+        ProductDto currentValue = extract(testService.getProduct("food", null));
 
         assertEquals(currentValue.getId(), testProduct.getId());
 
