@@ -4,47 +4,28 @@
     <meta charset="UTF-8">
     <title>Bestmix® About</title>
     <script th:replace="parts/langScript"></script>
-    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+    <link rel="stylesheet" th:href="@{/styles/myStyles.css}" type="text/css" media="all">
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon">
 </head>
 <body>
+<div th:replace="parts/sidePanel">sidepanel</div>
 <div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
-<h3><b><i>About</i></b></h3>
-
-
-
-<!--<p th:text="#{content.about}"></p>-->
-<!--<p th:text="#{content.about2}"></p>-->
 
 <div class="container">
     <section class="col-md-12">
         <!--  kafelka całkiem spoko  -->
 
-        <div style=" box-shadow: 10px 10px 15px gray;
-                padding: 30px;
-                margin-left: 20%;
-                margin-bottom: 25px;">
-            <div class="kafel" th:text="#{content.about}" style="color: darkgray;
-          box-shadow: 10px 10px 15px gray;
-          padding: 30px;
-          margin-bottom: 25px;
-        ">Dostarczamy specjalistyczne rozwiązania informatyczne ...</div>
-            <div th:text="#{content.about2}" style="color: darkgray;
-        box-shadow: 10px 10px 15px gray;
-        padding: 20px;
-        margin-bottom: 25px;
-        ">W zależności od potrzeb ...</div>
+        <div class="kafel">
+            <div class="kafel" th:text="#{content.about}" >Dostarczamy specjalistyczne rozwiązania informatyczne ...</div>
+            <div class="kafel" th:text="#{content.about2}" >W zależności od potrzeb ...</div>
         </div>
 
     </section>
 </div>
 
-<p style="color: darkgray;
-    font-size: 0.5rem";
-   align="center">Developed by Filip M. -
-    <a href="https://www.github.com/Filip-Mosz" style="color: darkgray" target="_blank">
-        www.github.com/Filip-Mosz</a></p>
+<p th:replace="parts/devCard">Developed by Filip M. -</p>
 </div>
 <footer th:replace="parts/footer :: footer" class="fixed-bottom">The Footer</footer>
 </body>

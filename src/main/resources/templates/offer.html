@@ -2,61 +2,54 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Bestmix® - Offer</title>
+    <title>Bestmix - Offer</title>
     <script th:replace="parts/langScript"></script>
-    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+    <link rel="stylesheet" th:href="@{/styles/myStyles.css}" type="text/css" media="all">
     <link media="all" rel="stylesheet"
           href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon">
 </head>
 <body>
-<div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu">...menu...</div>
-<div class="container ">
-    <!--todo: zająć się tym tak, żeby była tu lista ciągnięta z service'u z linkami do generowanych automatycznie podstron produktów-->
-    <img src="../templates/img/banner.png" alt="here should be banner">
+<div th:replace="parts/sidePanel">sidepanel</div>
+<div class="sticky-top shadow p-4 mb-4 bg-white" th:replace="parts/menu :: menu"> menu</div>
+<div class="container">
+
     <div class="container">
-        <section class="col-md-12">
-            <!--  kafelka całkiem spoko  -->
-
-                <div class="kafel" style="color: darkgray;
-          box-shadow: 10px 10px 15px gray;
-          padding: 30px;
-          margin-bottom: 25px;
-        ">
-                    <div>
-                        <div class="kafel" >
-                            <span >
-                                <a th:href="#{offer.food.link}">
-                                    <img src="http://bestmix.pl/wp-content/uploads/2018/06/Fotolia_138933460_XS.jpg" alt="food" >
-                                </a>
-                                food
-                            </span>
-                            <span >
-                                <a th:href="#{offer.feed.link}">
-                                    <img src="http://bestmix.pl/wp-content/uploads/2018/06/Fotolia_105293769_XS-e1530013466819.jpg" alt="feed">
-                                </a>
-                                feed
-                            </span>
-                        </div>
-                        <div>
-                            <a th:href="#{offer.lims.link}">
-                                <img src="http://bestmix.pl/wp-content/uploads/2018/06/Fotolia_3797697_XS.jpg" alt="lims" width="45%">
-                            </a>
-                            <a th:href="#{offer.ration.link}">
-                                <img src="http://bestmix.pl/wp-content/uploads/2018/06/Fotolia_107656365_XS.jpg" alt="ration" width="45%">
-                            </a>
-                        </div>
-                    </div>
+        <section class="col-mid-12">
+            <div class="kafel">
+                <div class="offer">
+                    <span>
+                        <p>Bestmix Food</p>
+                        <a th:href="#{offer.food.link}">
+                            <img th:src="@{/img/food.jpg}" alt="food" width="75%">
+                        </a>
+                    </span>
+                    <span>
+                        <p>Bestmix Feed</p>
+                        <a th:href="#{offer.feed.link}">
+                            <img th:src="@{/img/feed.jpg}" alt="food" width="75%">
+                        </a>
+                    </span>
                 </div>
-
-
+                <div class="offer">
+                    <span>
+                        <p>Bestmix Quality Control</p>
+                        <a th:href="#{offer.lims.link}">
+                            <img th:src="@{/img/lims.jpg}" alt="food" width="75%">
+                        </a>
+                    </span>
+                    <span>
+                        <p>Bestmix Ration</p>
+                        <a th:href="#{offer.ration.link}">
+                            <img th:src="@{/img/ration.jpg}" alt="food" width="75%">
+                        </a>
+                    </span>
+                </div>
+            </div>
         </section>
     </div>
 
-    <p style="color: darkgray;
-    font-size: 0.5rem" ;
-       align="center">Developed by Filip M. -
-        <a href="https://www.github.com/Filip-Mosz" style="color: darkgray" target="_blank">
-            www.github.com/Filip-Mosz</a></p>
+    <p th:replace="parts/devCard">Developed by Filip M. -</p>
 </div>
 <footer th:replace="parts/footer :: footer" class="fixed-bottom">The Footer</footer>
 </body>

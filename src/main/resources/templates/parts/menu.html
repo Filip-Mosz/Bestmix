@@ -3,48 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
+    <link rel="stylesheet" th:href="@{/styles/myStyles.css}" type="text/css" media="all">
+
 
 </head>
 <body>
 <nav th:fragment="menu" class="mt-auto py-3"
-     style="
-        background-color: #004556;
-            display: flex;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-            width: 100%;
-            justify-content: space-evenly;
-            scroll-behavior: auto;
-            box-shadow: #004556 0px 0px 0 2rem;
-    "
+     style="padding: 0 !important;
+"
 >
 
-    <p><a href="/" th:text="#{menu.homepage}">Homepage</a></p>
-    <p><a href="/about" th:text="#{menu.about}">About us</a></p>
-    <p><a href="/news" th:text="#{menu.news}">News</a></p>
-    <p><a href="/offer" th:text="#{menu.offer}">Offer</a></p>
-    <p><a th:href="@{/contact}" th:text="#{menu.contact}">Contact</a></p>
+    <a th:href="@{/}">
+        <img th:src="@{/img/header.png}" alt="header" width="100%">
+    </a>
 
-<!--    <div class="nav-scroller py-1 mb-2" th:fragment="template(items)">-->
-<!--        <nav class="nav d-flex justify-content-between">-->
-<!--            <a th:each="item : ${items}"-->
-<!--               class="p-2 text-muted"-->
-<!--               href="${item.link}" th:text="${item.name}"></a>-->
-<!--        </nav>-->
-<!--    </div>-->
+    <div class="menu">
 
+        <div class="menu-content">
+            <p><a href="/" th:text="#{menu.homepage}">Homepage</a></p>
+            <p><a href="/about" th:text="#{menu.about}">About us</a></p>
+            <p><a href="/news" th:text="#{menu.news}">News</a></p>
+            <p><a href="/offer" th:text="#{menu.offer}">Offer</a></p>
+            <p><a th:href="@{/contact}" th:text="#{menu.contact}">Contact</a></p>
+        </div>
 
-    <div>
-        <span th:text="#{lang.change}">change language</span>
-        <select id="locales">
-            <option value=""></option>
-            <option value="pl" th:text="#{lang.pl}"></option>
-            <option value="en" th:text="#{lang.eng}"></option>
-            <option value="cz" th:text="#{lang.cz}"></option>
-            <option value="ro" th:text="#{lang.ro}"></option>
-        </select>
+        <div class="menu" style="width: 10%">
+            <!--            https://emojiterra.com/country-flags/-->
+            <span th:utext="#{lang.change}" style="display: flex; flex-direction: row">&#x1F1F7;&#x1F1F4;</span>
+            <select id="locales">
+                <option value=""></option>
+                <option value="pl">&#x1F1F5;&#x1F1F1;</option>
+                <option value="en">&#x1F1EC;&#x1F1E7;</option>
+                <option value="cz">&#x1F1E8;&#x1F1FF;</option>
+                <option value="ro">&#x1F1F7;&#x1F1F4;</option>
+            </select>
+        </div>
+
     </div>
 </nav>
 </body>

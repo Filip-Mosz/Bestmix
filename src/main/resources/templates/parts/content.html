@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+    <link rel="stylesheet" th:href="@{/styles/myStyles.css" type="text/css" media="all">
     <title>Content</title>
 
 </head>
@@ -10,26 +10,23 @@
 <section class="col-md-12" th:fragment="content">
 <!--  kafelka całkiem spoko  -->
 
-<div style=" box-shadow: 10px 10px 15px gray;
-                padding: 30px;
-                margin-left: 20%;
-                margin-bottom: 25px;">
+<div class="kafel">
      <div class="kafel" th:text="#{content.main1}" style="color: darkgray;
           box-shadow: 10px 10px 15px gray;
           padding: 30px;
           margin-bottom: 25px;
         ">Dostarczamy specjalistyczne rozwiązania informatyczne ...</div>
-    <div th:text="#{content.main2}" style="color: darkgray;
+    <div class="kafel" th:text="#{content.main2}" style="color: darkgray;
         box-shadow: 10px 10px 15px gray;
         padding: 20px;
         margin-bottom: 25px;
         ">W zależności od potrzeb ...</div>
-    <div th:text="#{content.main3}" style="color: darkgray;
+    <div class="kafel" th:text="#{content.main3}" style="color: darkgray;
         box-shadow: 10px 10px 15px gray;
         padding: 20px;
         margin-bottom: 25px;
         ">Po udanej serii wdrożeń ...</div>
-    <div th:text="#{content.main4}" style="color: darkgray;
+    <div class="kafel" th:text="#{content.main4}" style="color: darkgray;
         box-shadow: 10px 10px 15px gray;
         padding: 20px;
         margin-bottom: 25px;

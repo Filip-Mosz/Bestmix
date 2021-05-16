@@ -8,7 +8,7 @@
 <!--    due to conflicts with other styles, style for footer land here :|    -->
 <footer th:fragment="footer" class="footer-sticky mt-auto py-3"
         style="
-            background-color: #004556;
+            background-color: yellow;
             display: flex;
             align-items: center;
             position: sticky;
@@ -17,22 +17,25 @@
             width: 100%;
             justify-content: space-evenly;
             color: #007bff;
+            padding-bottom: 0 !important;
         "
 >
-    <div align="center" class="container">
-        <p>&#127968; ul. Świętojańska 75/5 81-389 Gdynia</p>
+    <div class="container wrapper">
+        <p>&#127968; ul. Świętojańska 75/5, 81-389 Gdynia</p>
     </div>
-    <div align="center" class="container">
+    <div class="container wrapper">
 
-        <p>&#128222; +48 58 620 90 09</p>
+        <p>&#128222; +48 58 000 00 00</p>
     </div>
-    <div align="center" class="container">
+    <div  class="container wrapper">
 
-        <p>&#128233; anet@anet.com.pl</p><!--mechanizm mailto:  https://www.rapidtables.com/web/html/mailto.html -->
+        <p>
+            <a href="mailto:DoNotSend@anet.com.pl?subject=Ten%20mail%20nie%20ma%20prawa%20dotrzec">
+                &#128233; DoNotSend@anet.com.pl</a></p>
     </div>
-    <div align="center" class="container">
+    <div class="container wrapper">
 
-        <p>&#127757;<a href="http://www.anet.com.pl" target="_blank">www.anet.com.pl</a></p><!--Jako link!!!-->
+        <p>&#127757; <a href="http://www.anet.com.pl" target="_blank">www.anet.com.pl</a></p>
     </div>
 
 

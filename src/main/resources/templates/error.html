@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ERROR</title>
+  <link rel="stylesheet" href="../styles/myStyles.css" type="text/css" media="all">
+  <link media="all" rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" th:href="@{/img/error.gif}" type=image/x-icon>
+</head>
+<body>
+<div class="kafel container">
+  <div style="box-shadow: 0 0 0; color: black" class="kafel">
+    <h2>Something went wrong &#9888;</h2>
+    <!--    tu można dać wersję miedzynarodową    -->
+  </div>
+  <div style="box-shadow: 0 0 0" class="kafel">
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia2.giphy.com%2Fmedia%2FvKz8r5aTUFFJu%2Fgiphy.gif&f=1&nofb=1" alt="something's wrong">
+  </div>
+  <div style="box-shadow: 0 0 0" class="kafel">
+    <p><a href="/" th:text="#{menu.homepage}">Return to HomePage</a></p>
+  </div>
+</div>
+</body>
+</html>
+

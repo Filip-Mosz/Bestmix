@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" th:href="@{/styles/myStyles.css}" type="text/css" media="all">
+  <link media="all" rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="slideout-widget widget-facebook" th:fragment="sidePanel">
+  <div class="slideout-widget-handler">
+    <img th:src="@{/img/Star.png}" alt="A" width="90%">
+  </div>
+
+  <div class="slideout-widget-content">
+    <a href="http://bestmix.pl/" target="_blank"><img th:src="@{/img/Slider.png}" alt="LOGO" width="90%"></a>
+  </div>
+
+</div>
+</body>
+</html>
